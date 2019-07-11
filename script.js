@@ -6,11 +6,12 @@ function changeStr(str_) {
         if (!str2[i]) return str2[i];
           str3[i] = str2[i][0].toUpperCase() + str2[i].slice(1);
     }
-    alert(str3.join(" "));
+    str3 = str3.join(" ");
+    return str3;
 }
 
 var str_User = prompt("Ваше ФИО полностью?");
-changeStr(str_User);
+alert(changeStr(str_User));
 
 //changeStr("гайда денис сергеевич");
 //changeStr("ГАЙДА ДЕНИС СЕРГЕЕВИЧ");
